@@ -6,6 +6,12 @@ This repository contains Jupyter notebooks for detecting and tracking objects in
 
 The notebooks explore custom object detection with **YOLOv8**, tracking with **ByteTrack**, and video annotation with **Supervision**. One saved model lists three classes: **drone, marine litter, and researcher**. The available classes depend on the dataset and trained weights used in each notebook.
 
+## Example detection
+
+![Example of a person detected in a drone image of a beach](step2_video_detection/kmi_detection_example.png)
+
+*An annotated video frame from the KMI video detection notebook. The label shows the predicted class and confidence score.*
+
 ## Code in this repository
 
 - **Step 1 — Training:** [Drone and researcher model](step1_training/step1_drone_training.ipynb) and [Gwangalli Beach model](step1_training/step1_gwangalli_training.ipynb) train separate YOLOv8 models and produce weights.
