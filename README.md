@@ -8,14 +8,13 @@ The notebooks explore custom object detection with **YOLOv8**, tracking with **B
 
 ## Code in this repository
 
-- [Training a custom model](training/step1__new_model_yolo_weight.ipynb): Downloads a Roboflow dataset and trains, validates, and tests a YOLOv8 model.
-- [Applying a custom model to video](video/step2_new_model_custom_dataset_application_23_09_12.ipynb): Detects and tracks objects frame by frame, then saves an annotated video.
-- [Gwangalli Beach training experiment](<training/Project_sponsored by KMI_(Weight_part1_24.04.09).ipynb>): Trains a separate YOLOv8 model using a Gwangalli Beach dataset.
-- [Additional video example](<video/KMI_project_part2(data_processing_part).ipynb>) and [pretrained model example](video/__yolov8_custom_YC_11_09_23.ipynb): Apply detection to video with different models and settings.
-- [Reference files](reference/): Includes the original Roboflow dataset information and an empty notebook.
+- **Step 1 — Training:** [Drone and researcher model](step1_training/step1_drone_training.ipynb) and [Gwangalli Beach model](step1_training/step1_gwangalli_training.ipynb) train separate YOLOv8 models and produce weights.
+- **Step 2 — Video detection:** [Custom model](step2_video_detection/step2_custom_model_video.ipynb), [KMI video example](step2_video_detection/step2_kmi_video.ipynb), and [pretrained model](step2_video_detection/step2_pretrained_model_video.ipynb) apply detection to video. The custom model example also tracks objects.
+
+The training folder also contains the original Roboflow dataset information. An empty notebook is preserved in the video detection folder.
 
 ## Getting started
 
 The notebooks were written for **Google Colab** and use Google Drive, Roboflow, and packages installed in notebook cells. To run them, provide the required dataset, video, and model weights, and update the paths and Roboflow credentials for your environment.
 
-The notebooks use different datasets and weights. For example, the saved output in the training notebook lists **drone** and **researcher**, while the video notebook shows a model with three classes. Check the dataset labels and model names before applying weights to a video. Some package versions are from the original experiments and may require adjustment in a current environment.
+The notebooks use different datasets and weights. For example, the saved output in the drone training notebook lists **drone** and **researcher**, while the custom video notebook shows a model with three classes. Check the dataset labels and model names before applying weights to a video. Some package versions are from the original experiments and may require adjustment in a current environment. The original Colab badges inside the notebooks may point to old paths; open the notebooks from the links above instead.
